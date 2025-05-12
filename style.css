@@ -166,6 +166,80 @@ nav p {
     font-weight: bold;
     font-size: var(--menu-font);
 }
+
+/* Resume Section */
+ section#resume {
+    margin-top: 6%;
+    padding: 0 14%; /*for let space*/
+ }
+
+ section#resume #resume-main-div {
+    display: flex;
+    flex-direction:column ; 
+ }
+
+    
+
+section#resume 
+#resume-main-div 
+#work-experience, #education, #skills-expertise {
+  display: grid;
+  grid-template-columns: 2fr  2fr;
+  gap:1%;
+}
+
+#all-work-experience, #all-educations, #all-skills {
+    display: flex;
+    flex-direction: column;
+}
+
+#all-work-experience 
+.experience-details, #all-educations .experience-details  {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+ #all-skills{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+ }
+
+ #resume-main-div > h1 {
+    font-size:var(--heading-font) ;
+ }
+
+ #resume-main-div .resume-head-text{
+    font-size: var(--subheading-font);
+    font-weight: bold;
+ }
+
+  #resume-main-div .resume-subhead-text-work {
+    font-size: var(--menu-font);
+    font-weight: bold;
+    padding-top: 1%;
+    margin-top: 2.3%;
+ }
+
+  #resume-main-div .resume-subhead-text p{
+    font-size: var(--menu-font);
+    font-weight: bold;
+    padding-top: 0;
+    margin: 0;
+  }
+
+ #work-experience, #education {
+    border-bottom: 0.8px solid var(--secondary-color);
+    padding-bottom: 5%;
+ }
+#education, #skills-expertise {
+    padding-top: 5%;
+}
+
+#skills-desc ul li{
+padding-bottom: 5%;
+}
+
+
 /* footer */
 footer{
     padding: 0 4%; 
