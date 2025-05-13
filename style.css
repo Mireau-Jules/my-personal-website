@@ -240,11 +240,151 @@ padding-bottom: 5%;
 }
 
 
+/* project section */
+/* 📌 General Section Styling */
+#project-section {
+   margin-top: 3%;
+   padding: 0 14%; /*for let space*/
+    
+}
+
+/* 📌 Main Project Container */
+
+/* 📌 Project Title */
+#project-section-title {
+    font-size:var(--heading-font);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* 📌 Projects Grid Layout */
+#second-div-project-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* Adds space between projects */
+     
+}
+
+/* 📌 Individual Project Styling */
+.project-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Separates text and image */
+    gap: 25%;
+    
+
+}
+
+
+.project-item > div > p:nth-child(1) {
+    font-size: var(--menu-font);
+    font-weight: bold;
+}
+
+
+/* 📌 Image - Positioned to the Right */
+.project-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    flex: 1;
+    
+}
+#contact-section{
+    margin-top: 15%;
+}
+
+#main-div-contact-section {
+    display: flex;
+    flex-direction: row;
+    gap: 23%;
+    margin-top: 3%;
+    padding: 0 14%;
+}
+
+#main-div-contact-section div:nth-child(1) h1 {
+    font-size: var(--heading-font);
+    padding: 0;
+    margin: 0;
+}
+
+#main-div-contact-section div:nth-child(1) h5 {
+    font-size: var(--subheading-font);
+    padding: 0;
+    margin: 0;
+}
+
+#main-div-contact-section div:nth-child(1) p {
+    padding: 1% 0 5% 0;
+    margin: 0;
+}
+
+#main-div-contact-section div p:first-of-type {
+    margin-bottom: 10%;
+}
+
+/* the form */
+
+.all-basic-information{
+    display: flex;
+    gap: 10%;
+ }
+
+ .all-basic-information > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+ }
+
+ form label {
+    padding-bottom: 3%;
+ }
+
+form input {
+    width: 100%; 
+    padding: 10px; 
+    font-size: 1rem; 
+    background-color: var(--primary-color);
+    border: 1px solid var(--fifth-color); 
+    transition: color 0.3s ease;
+}
+
+input:hover {
+    border-color: var(--secondary-color); /* Changes border on hover */
+}
+
+div#message-div textarea {
+    margin-top: 3%; 
+    background-color: var(--primary-color);
+}
+
+button#button {
+    margin-top: 3%;
+    background-color: var(--secondary-color);
+    width: 100%;
+    padding: 3%;
+    border: 1px solid var(--fifth-color);
+    border-radius: 30px; /* Adds rounded corners */
+    font-weight: bold; /* Makes the text bold */
+    font-size: var(--menu-font);
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+/* 📌 Hover Effect */
+button#button:hover {
+    background-color: var(--primary-color); /* Changes color on hover */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+}
+
+
+
+
 /* footer */
 footer{
     padding: 0 4%; 
     padding-top: 2%;
-    margin-top:15% ;
+    margin-top:10% ;
     margin-bottom: 3%;
 }
 
