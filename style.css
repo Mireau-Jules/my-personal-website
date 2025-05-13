@@ -4,7 +4,7 @@
     --secondary-color: #e7b203; /* Accent color */
     --third-color: #55d6e8; /* Alternate highlight */
     --fourth-color: #e90707; /* Additional accent */
-    --fifth-color: #000000; /* Main text color */
+    --fifth-color: #454545; /* Main text color */
     
     --primary-font: Arial, Helvetica, sans-serif; /* Main font family */
 
@@ -17,12 +17,22 @@
 }
 
 /* 📌 Apply Global Styles */
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+
+
 body {
     background-color: var(--primary-color);
     font-family: var(--primary-font);
     font-size: var(--base-font);
     margin: 0;
     padding: 0;
+}
+
+body p {
+    color: var(--fifth-color) !important;
 }
 
 /* 📌 Navbar Styling */
