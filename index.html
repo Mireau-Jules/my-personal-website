@@ -5,25 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mireau-Jules SAINT-LOUIS</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
+
+        <!-- about with picture -->
         <nav>
-            <div>
+            <a href="#about"><div class="nav-brand">
                 <div class="little-circle"></div>
                 <p>Mireau-Jules SAINT-LOUIS</p>
-        </div>
-            <ul>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#project-section">Projects</a></li>
-                <li><a href="#contact-section">Contact</a></li>
+        </div></a>
+        <button class="menu-toggle">☰</button>
+            <ul class="nav-menu">
+                <li class="nav-link"><a href="#resume">Resume</a></li>
+                <li class="nav-link"><a href="#project-section">Projects</a></li>
+                <li class="nav-link"><a href="#contact-section">Contact</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <section id="about">
+            <div class="geometric-shapes">
+  <div class="shape triangle"></div>
+  <div class="shape circle"></div>
+  <div class="shape square"></div>
+            </div>
             <div class="profile-picture">
                 <img src="./image.png" alt="Jules' Profile Picture">
             </div>
@@ -33,11 +43,12 @@
                 <h4>A Bit About Me</h4>
                 <p>I'm a developer passionate about creating intuitive and impactful digital experiences. Feel free to explore my work, learn more about my journey, and connect with me!</p>
             </div>
+            <!-- button s
             <div class="buttons">
-                <a href="#resume"><div><p>Resume</p></div></a>
-                <a href="#project-section"><div><p>Projects</p></div></a>
-                <a href="#contact-section"><div><p>Contacts</p></div></a>
-            </div>
+                <a href="#resume"><div> Resume</div></a>
+                <a href="#project-section"><div >Projects</div></a>
+                <a href="#contact-section"><div >Contacts</div></a>
+            </div> -->
         </div>
         </section>
 
@@ -47,7 +58,6 @@
             <div id="resume-main-div">
                 <h1>Resume</h1>
                     <div id="work-experience">
-<!-- la nou fe de div pou miz an paj la -->
                         <div id="work-experience-text">
                             <p class="resume-head-text">Work Experience</p>
                         </div>
@@ -171,7 +181,7 @@
                     <p class="project-description">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
                 </div>
                 <div class="project-image">
-                    <img src="./image-1.jpeg" alt="Project Image 02"/>
+                    <img src="./image-2.jpeg" alt="Project Image 02"/>
                 </div>
             </div>
 
@@ -182,7 +192,7 @@
                     <p class="project-description">I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
                 </div>
                 <div class="project-image">
-                    <img src="./image-1.jpeg" alt="Project Image 03"/>
+                    <img src="./image-3.jpeg" alt="Project Image 03"/>
                 </div>
             </div>
 
@@ -205,26 +215,26 @@
                 </div>
                 <div>
                        <form action="/submit" method="POST">
-                           <div id="basic-information">
+                           <div id="basic-information" class="input-group">
                              <div  class="all-basic-information">
-                                <div>
+                                <div class="form-control">
                                     <label for="first-name">First Name *</label>
                                     <input type="text" id="first-name" name="first-name" required>
                                 </div>
 
-                                <div>
+                                <div class="form-control">
                                     <label for="last-name">Last Name *</label>
                                     <input type="text" id="last-name" name="last-name" required>
                                 </div>
                             </div>
 
                             <div class="all-basic-information">
-                                <div>
+                                <div class="form-control">
                                     <label for="email">Email *</label>
                                     <input type="email" id="email" name="email" required>
                                 </div>
 
-                                <div>
+                                <div class="form-control">
                                     <label for="subject">Subject</label>
                                     <input type="text" id="subject" name="subject">
                                 </div>
@@ -245,24 +255,26 @@
     </main>
 
     <footer>
-            <div>
-                <div class="contact-info">
+        <div>
+            <div class="contact-info footer-col">
                 <p class="main-footer-text">Phone</p>
                 <p><a href="https:wa.me/+50934337587?text=Hello%20Jules" target="_blank">+5093433-7587</a></p>
             </div>
-            <div class="email-info">
+            <div class="email-info footer-col">
                 <p class="main-footer-text">Email</p>
                 <p><a href="mailto:saintlouismireaujules@gmail.com?subject=Hello&body=I%20want%20to%20contact%20you">saintlouismireaujules@gmail.com</a></p>
             </div>
-            <!-- <div class="social-links">
+            <div class="social-links footer-col">
                 <p class="main-footer-text">Follow Me</p>
-                <i class="fa-brands fa-linkedin-in"></i>
-                <i class="fa-brands fa-github"></i>
-            </div> -->
+                <div>
+                    <a href="https://www.linkedin.com/in/mireau-jules-saint-louis/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Mireau-Jules"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
             <div class="copyright">
                 <p>&copy; 2025 Mireau-Jules - All rights reserved.</p>
             </div>
-            </div>
+        </div>
     </footer>
   <script src="./index.js"></script>  
 </body>
